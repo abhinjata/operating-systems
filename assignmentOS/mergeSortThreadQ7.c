@@ -6,8 +6,8 @@
 //merge function
 void merge(int arr[], int left, int mid, int right){
 
-    int n1 = m - left + 1;
-    int n2 = r - m;
+    int n1 = mid - left + 1;
+    int n2 = right - mid;
     int Left[n1], Right[n2];
     for (int i = 0; i < n1; i++) Left[i] = arr[left + i];
     for (int j = 0; j < n2; j++) Right[j] = arr[mid + 1 + j];
